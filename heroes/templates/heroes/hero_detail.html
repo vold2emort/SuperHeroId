@@ -1,0 +1,5 @@
+<h2>{{ hero.name }} ({{ hero.alias }})</h2>
+<p><strong>Superpower:</strong> {{ hero.superpower }}</p>
+<p><strong>City:</strong> {{ hero.city }}</p>
+<p><strong>Status:</strong> {% if hero.active %} Active {% else %} Retired {% endif %}</p>
+<a href="{% url 'hero_list' %}">Back to list</a>
